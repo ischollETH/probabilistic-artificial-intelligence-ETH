@@ -35,6 +35,7 @@ Further, some similar excerpts of the results on the fashion MNIST dataset can a
 
 
 ## Task 3: Bayesian Optimization
+Task implementing a Bayesian Optimization (minimization) algorithm using Gaussian Processes for the constraint and objective function. All three common acquisition functions following the paper by [Snoek et al. (2012)](https://arxiv.org/pdf/1206.2944.pdf) were tested: Probability of Improvement (PI), Expected Improvement (EI) and Lower Confidence Bound (LCB). This allows to tune hyperparameters all the while constraints are active. The best results were observed when using EI, and in the following visualizations of the posteriors of both the constraint as well as objective function are shown:
 
 <p align="center">
   <img src=https://github.com/ischollETH/probabilistic-artificial-intelligence-ETH/blob/main/images/task3_extended_evaluation.png width="1000" title="Visual representation of GP posterior for the objective and constraint function">
@@ -42,6 +43,7 @@ Further, some similar excerpts of the results on the fashion MNIST dataset can a
 
 
 ## Task 4: Reinforcement Learning (RL)
+Task implementing a Reinforcement Learning (RL) algorithm that, by practicing on a simulator, learns a control policy for a lunar lander. The approaches used and studied were (1) using only policy gradients, (2) using rewards-to-go on top and (3) generalized advantage estimation as a baseline. The latter two are used to reduce the variance of the policy gradients by ignoring noisy or pooling noisy rewards from the past which were not a consequence of the action under consideration. The following shows some resulting runs of the simulation after training, where the lunar lander is supposed to land between the yellow flags without crashing:
 
 <p align="center">
   <img src=https://github.com/ischollETH/probabilistic-artificial-intelligence-ETH/blob/main/images/task4_policy.gif width="1000" title="Several sequences of the spaceship landing trained through reinforcement learning">
