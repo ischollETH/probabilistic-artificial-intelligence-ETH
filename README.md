@@ -46,5 +46,5 @@ Task implementing a Bayesian Optimization (minimization) algorithm using Gaussia
 Task implementing a Reinforcement Learning (RL) algorithm that, by practicing on a simulator, learns a control policy for a lunar lander. The approaches used and studied were (1) using only policy gradients, (2) using rewards-to-go on top and (3) generalized advantage estimation as a baseline. The latter two are used to reduce the variance of the policy gradients by ignoring noisy or pooling noisy rewards from the past which were not a consequence of the action under consideration. The following shows some resulting runs of the simulation after training, where the lunar lander is supposed to land between the yellow flags without crashing:
 
 <p align="center">
-  <img src=https://github.com/ischollETH/probabilistic-artificial-intelligence-ETH/blob/main/images/task4_policy.gif width="1000" title="Several sequences of the spaceship landing trained through reinforcement learning">
+  <img src=https://github.com/ischollETH/probabilistic-artificial-intelligence-ETH/blob/main/images/task4_policy.gif width="700" title="Several sequences of the spaceship landing trained through reinforcement learning">
 </p>
